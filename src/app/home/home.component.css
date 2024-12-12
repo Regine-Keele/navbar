@@ -1,0 +1,39 @@
+body {
+    margin: 0; 
+    height: 80vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.left{
+    flex: 1;
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+       /* Media Query for screens smaller than 768px (tablets and phones) */
+       @media (max-width: 1000px) {
+        .container {
+            flex-direction: column; /* Stack left and right containers vertically */
+        }
+
+        .left, .right {
+            flex: none;
+            width: 100%;
+            padding: 10px;
+        }
+
+    }

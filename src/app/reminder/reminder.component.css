@@ -1,0 +1,32 @@
+body {
+    margin: 0;                  
+    display: flex;              
+    flex-direction: column;     
+    justify-content: center;    
+    align-items: center;        
+    min-height: 80vh;           
+}
+.d-flex{
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: pink;
+    margin-top: 20px;
+    padding: 10px 20px;         
+    border: none;               
+    border-radius: 5px;         
+    cursor: pointer;           
+}
+
+.submit-button:hover {
+    background-color: #ff7fb2; 
+}
+
+.field{
+    width:500px;
+}
+
+.note{
+    height:300px;
+}

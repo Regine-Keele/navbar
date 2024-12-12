@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="red">{{title}}</p>
+
+    <div class="d-flex flex-column gap-1">
+        <span class="fs-bold">Account: {{account$ | async }}</span>
+        <input type="text" (input)="modifyField($event, 'account')" class="field">
+    </div>
+
+    <div class="d-flex flex-column gap-1">
+        <span class="fs-bold">Email: {{email$ | async }}</span>
+        <input type="text" (input)="modifyField($event, 'email')" class="field">
+    </div>
+
+    <div class="d-flex flex-column gap-1">
+        <span class="fs-bold">Date: {{date$ | async }}</span>
+        <input type="text" (input)="modifyField($event, 'date')" class="field">
+    </div>
+
+    <div class="d-flex flex-column gap-1">
+        <span class="fs-bold">Note: </span>
+        <input type="text" (input)="modifyField($event, 'note')" class="field note">
+    </div>
+
+    <button (click)="executeHelloWorld()" class="submit-button">
+        Submit
+    </button>
+
+
+    <router-outlet></router-outlet>
+    
+
+</body>
+
+</html>
